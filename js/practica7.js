@@ -136,27 +136,27 @@ equipo.push(new Jugador ("Alvarez", 9, 22, false))
 equipo.push(new Jugador ("Di Maria", 11, 32, true))
 equipo.push(new Jugador ("Otamendi", 19, 33, false))
 equipo.push(new Jugador ("Dibu", 23, 28, false))
-console.log(equipo)
+// console.log(equipo)
 
 
-let buscarJugador = (equipo, jugador) => {return equipo.find(objeto => objeto.nombre === jugador)}
+// let buscarJugador = (equipo, jugador) => {return equipo.find(objeto => objeto.nombre === jugador)}
+let buscarJugador = (equipo, jugador) => {return equipo.find(objeto=> objeto.nombre === jugador)}
 
-
-let filtroJugador = (equipo, edad) => {return equipo.filter((numero) => numero.edad == edad)}
-let filtrados = []
-
-
+const filtroJugador = (equipo, edad) => {return equipo.filter((numero) => numero.edad === edad)}
 
 for (let index = 0; index < 1; index++) {
     let busqueda = filtroJugador(equipo, prompt(""))
     if (busqueda != undefined) {
-        alert("El jugador es " + busqueda )
-        console.log(busqueda)
+        equipo.forEach(element => {
+            return element.nombre
+        });
+        alert("el jugador es " + busqueda.nombre)
     }else{
-        alert("No existe un jugador con esa edad")
+        alert("no")
     }
-    
 }
+
+
 
 // const productos = [
 //     {producto:"Papa", precio: 300},

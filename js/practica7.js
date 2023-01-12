@@ -121,48 +121,40 @@
 // actividad 5
 
 
-class Jugador {
-    constructor(nombre, numeroCamiseta, edad, lesionado){
-        this.nombre = nombre
-        this.numeroCamiseta = numeroCamiseta
-        this.edad = edad
-        this.lesionado = lesionado
-    }
-}
+// class Jugador {
+//     constructor(nombre, numeroCamiseta, edad, lesionado){
+//         this.nombre = nombre
+//         this.numeroCamiseta = numeroCamiseta
+//         this.edad = edad
+//         this.lesionado = lesionado
+//     }
+// }
 
-const equipo = []
-equipo.push(new Jugador ("Messi", 10, 33, false))
-equipo.push(new Jugador ("Alvarez", 9, 22, false))
-equipo.push(new Jugador ("Di Maria", 11, 32, true))
-equipo.push(new Jugador ("Otamendi", 19, 33, false))
-equipo.push(new Jugador ("Dibu", 23, 28, false))
+// const equipo = []
+// equipo.push(new Jugador ("Messi", 10, 33, false))
+// equipo.push(new Jugador ("Alvarez", 9, 22, false))
+// equipo.push(new Jugador ("Di Maria", 11, 32, true))
+// equipo.push(new Jugador ("Otamendi", 19, 33, false))
+// equipo.push(new Jugador ("Dibu", 23, 28, false))
 // console.log(equipo)
 
+// const filtroJugador = (equipo, edad) => {return equipo.filter((numero) => numero.edad === Number(edad))}
 
-// let buscarJugador = (equipo, jugador) => {return equipo.find(objeto => objeto.nombre === jugador)}
-let buscarJugador = (equipo, jugador) => {return equipo.find(objeto=> objeto.nombre === jugador)}
+// const listaJugadores = (jugadores) => {
+//     let lista = ""
+//     for (const jugador of jugadores) {
+//         lista += "El jugador es " + jugador.nombre + ", la camiseta es la N°" + jugador.numeroCamiseta + " y su edad es " + jugador.edad + "\n"
+//     }
+//     return lista
+// }
 
-const filtroJugador = (equipo, edad) => {return equipo.filter((numero) => numero.edad === edad)}
+// for (let index = 0; index < 5; index++) {
+//     let filtro = filtroJugador(equipo, prompt("ingresa la edad"))
+//     if (filtro.length > 0) {
+//         alert(listaJugadores(filtro))
+//     }else{
+//         alert("no")
+//     }
+// }
 
-for (let index = 0; index < 1; index++) {
-    let busqueda = filtroJugador(equipo, prompt(""))
-    if (busqueda != undefined) {
-        equipo.forEach(element => {
-            return element.nombre
-        });
-        alert("el jugador es " + busqueda.nombre)
-    }else{
-        alert("no")
-    }
-}
-
-
-
-// const productos = [
-//     {producto:"Papa", precio: 300},
-//     {producto:"Huevo", precio: 800},
-//     {producto:"Harina", precio: 500},
-// ]
-
-// const productoss = productos.filter( (element)=> element.precio >= 500)
-// console.log(productoss)
+// bien hecha la funcion pero jamas me hubiese imaginado que tenia que hacer una funcion lista para poder almacenar todo, dificilisimo la verdad, hay que tener la mente muy abiertaaaaaaaa
